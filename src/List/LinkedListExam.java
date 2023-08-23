@@ -16,6 +16,7 @@ public class LinkedListExam {
 		list.add("송지효");
 		list.add("하하");
 		
+		System.out.println("--------------------------------");
 		System.out.println(list.get(0));
 		System.out.println(list.get(1));
 		System.out.println("--------------------------------");
