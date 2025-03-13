@@ -1,0 +1,23 @@
+drop database if exists mem_db;
+create database mem_db;
+
+use mem_db;
+
+CREATE TABLE member (
+	id varchar(20) NOT NULL,
+	name VARCHAR(50) NOT NULL, 
+	pwd VARCHAR(50) NOT NULL,
+	address varchar(100) NULL DEFAULT NULL,
+	joinday date NULL DEFAULT NULL,
+	PRIMARY KEY (id) USING BTREE
+);
+
+insert into member values('hong', '홍길동','1212','서울시 강남구', '2020-03-02');
+insert into member values('lee', '이순신','1212','경상남도 통영군', '2015-05-05');
+insert into member values('kim', '김유신','1212','경상북도 경주시', '2024-10-15');
+
+
+select * from member
+select * from member where id=?
+insert into member values(?, ?, ?, ?, ?)
+delete from member where id=?
